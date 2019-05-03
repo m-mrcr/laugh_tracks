@@ -1,0 +1,7 @@
+<% @comedians.each do |comedian| %>
+  <section id="comedian-<%=comedian.id%>">
+    <h2><%=comedian.name%></h2>
+    <p>Age: <%=comedian.age%></p>
+    <p>City: <%=comedian.city%></p>
+  </section>
+<% end %>
