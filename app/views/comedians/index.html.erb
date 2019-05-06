@@ -3,5 +3,8 @@
     <h2><%=comedian.name%></h2>
     <p>Age: <%=comedian.age%></p>
     <p>City: <%=comedian.city%></p>
-  </section>
+    <%comedian.specials.each do |special|%>
+      <p>Title: <%= special.name%></p>
+      <p>Runtime: <%= special.runtime%> minutes </p>
+    <%end%>
 <% end %>
